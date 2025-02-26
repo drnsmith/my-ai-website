@@ -1,3 +1,51 @@
+
+
+
+## Project's Structure
+```bash
+my-ai-website/
+
+│── app/
+│   ├── api/
+│   │   ├── subscribe/   # Subscription endpoint (saves emails)
+│   │   │   ├── route.ts
+│   ├── blog/           # Blog system
+│   │   ├── page.tsx    # Blog index page (lists all posts)
+│   │   ├── [slug]/     # Dynamic route for individual blog posts
+│   │   │   ├── page.tsx
+│   ├── components/     # Reusable components
+│   │   ├── Footer.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── SubscribeForm.tsx
+│   ├── layout.tsx      # Layout file for consistent UI
+│   ├── page.tsx        # Home page
+│   ├── about/          # About page
+│   │   ├── page.tsx
+│   ├── projects/       # Projects page
+│   │   ├── page.tsx
+│   ├── games/          # Games page
+│   │   ├── page.tsx
+│── lib/                # Helper functions (e.g., fetch blog posts)
+│   ├── getPost.ts
+│   ├── getPosts.ts
+│── posts/              # Markdown blog posts
+│   ├── Project6.md
+│   ├── Project7.md
+│── public/             # Static assets (images, icons)
+│   ├── images/
+│   │   ├── project6_images/
+│   │   ├── project7_images/
+│── styles/
+│   ├── globals.css     # Tailwind and global styles
+│── subscribers.csv     # Email list for newsletter
+│── tailwind.config.ts  # Tailwind configuration
+│── tsconfig.json       # TypeScript config
+│── next.config.ts      # Next.js config
+│── package.json        # Dependencies
+│── README.md
+
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
